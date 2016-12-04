@@ -160,10 +160,10 @@ describe('Todo MVC Angular App', function() {
   });
   
   ////////////////////////////////////////////////////////////////  
-  it('Create 1000 todos', function() {
-    var loopCount = 10;
+  it('Create 100 todos', function() {
+    var loopCount = 100;
     for (var i = 0; i < loopCount; ++i) {
-      textElement.sendKeys(loopCount.toString());
+      textElement.sendKeys(i.toString());
       textElement.sendKeys(protractor.Key.ENTER);
     }
     var list = element.all(by.className('view'));
